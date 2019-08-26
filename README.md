@@ -64,3 +64,18 @@ export default Root;
 * src/**serviceWorker.js** 관련
   - 브라우저의 백그라운드에서 실행되는 자바스크립트 워커 이다. 웹에서도 네이티브처럼 오프라인 상테에서도 사용가능하고, 푸시알림 기능도 사용할 수 있는데, 이런기능을 할 수 있도록 도와주는 것.
 
+
+
+
+## 참조 URL
+* Redux관련 설명 (https://lunit.gitbook.io/redux-in-korean/)
+* velopert님의 리덕스 사용 (https://velog.io/@velopert/Redux-3-%EB%A6%AC%EB%8D%95%EC%8A%A4%EB%A5%BC-%EB%A6%AC%EC%95%A1%ED%8A%B8%EC%99%80-%ED%95%A8%EA%BB%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-nvjltahf5e)
+* velopert님의 미들웨어 관련 (https://velopert.com/3401)
+* velog 리액트 Hooks 완벽정복 (https://velog.io/@velopert/react-hooks)
+* React로 블로그 만들기 (https://www.dnkdream.com/react-blog-11/)
+
+
+## 기타 참조 URL
+* github README파일 마크다운 설명 (https://gist.github.com/ihoneymon/652be052a0727ad59601)
+* 매니페스트,서비스워커 관련 설명 (https://altenull.github.io/2018/03/09/%EC%9B%B9%EC%95%B1-%EB%A7%A4%EB%8B%88%ED%8E%98%EC%8A%A4%ED%8A%B8-%EC%84%9C%EB%B9%84%EC%8A%A4%EC%9B%8C%EC%BB%A4-Web-App-Manifest-Service-Worker/)
+* Airbnb React 스타일 가이드 (https://github.com/apple77y/javascript/tree/master/react)

@@ -67,6 +67,8 @@ export default Root;
 
 
 
+
+
 ## 참조 URL
 * Redux관련 설명 (https://lunit.gitbook.io/redux-in-korean/)
 * velopert님의 리덕스 사용 (https://velog.io/@velopert/Redux-3-%EB%A6%AC%EB%8D%95%EC%8A%A4%EB%A5%BC-%EB%A6%AC%EC%95%A1%ED%8A%B8%EC%99%80-%ED%95%A8%EA%BB%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-nvjltahf5e)
@@ -79,3 +81,10 @@ export default Root;
 * github README파일 마크다운 설명 (https://gist.github.com/ihoneymon/652be052a0727ad59601)
 * 매니페스트,서비스워커 관련 설명 (https://altenull.github.io/2018/03/09/%EC%9B%B9%EC%95%B1-%EB%A7%A4%EB%8B%88%ED%8E%98%EC%8A%A4%ED%8A%B8-%EC%84%9C%EB%B9%84%EC%8A%A4%EC%9B%8C%EC%BB%A4-Web-App-Manifest-Service-Worker/)
 * Airbnb React 스타일 가이드 (https://github.com/apple77y/javascript/tree/master/react)
+* 리액트 라우터 (https://kbennycc.blogspot.com/2019/02/0117-react-router.html)
+* 최신 라우터 처리 (https://medium.com/@wdjty326/react-router-dom-v5-route-%EC%A0%84%ED%99%98-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98-%EC%B2%98%EB%A6%AC-935dfc6cc475)
+* React.Fragment 관련 (https://ko.reactjs.org/docs/fragments.html)
+* react-router-dom Switch 관련 
+* classNames (npm i classnames) (https://velog.io/@velopert/react-component-styling) (https://github.com/JedWatson/classnames#readme)
+* 리액트 스타일링 방법 (https://velog.io/@velopert/react-component-styling)
+* 리액트 파일로더, url로더 관련 (http://jeonghwan-kim.github.io/js/2017/05/22/webpack-file-loader.html)

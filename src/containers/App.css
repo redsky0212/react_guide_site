@@ -1,0 +1,5 @@
+.wrapper{display:block;content:'';clear:both;background:#f0f4f7;width:100%;}
+@media screen and (max-width:1115px) {
+	/* 최종적으로 이 이하는 폭 고정에 대한 예시, 고정 해상도는 결정해서 max값과 wrapper의 min값 수정 하시면 됩니다.*/
+	.wrapper {min-width: 1095px;}
+}

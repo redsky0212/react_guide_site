@@ -29,10 +29,10 @@ class HeaderContainer extends Component {
         return (
             <header>
                 <div className="hear_wrap">
-                    <h1><img src="/images/logo.png" alt="BI" /> <a href="my_vm.html">SPM Report</a></h1>
+                    <h1><img src="resources/images/logo.png" alt="BI" /> <a href="my_vm.html">SPM Report</a></h1>
                     <nav className="gnb_right">
-                        <a href="#"><img src="/images/img_profile.png" alt="로그인" />&nbsp;&nbsp;&nbsp;김찬호님</a>
-                        <a href="#"><img src="/images/img_info.png" alt="로그아웃" />&nbsp;&nbsp;&nbsp;사용안내</a>
+                        <a><img src="/images/img_profile.png" alt="로그인" />&nbsp;&nbsp;&nbsp;김찬호님</a>
+                        <a><img src="/images/img_info.png" alt="로그아웃" />&nbsp;&nbsp;&nbsp;사용안내</a>
                         <div className="selectbox" style={select}>
                             <div className="select">
                                 <p className="tit" title="조회월"><a href="#none"><span>데이타서비스</span></a></p>

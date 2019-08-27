@@ -3,6 +3,10 @@ import HeaderContainer from '../containers/HeaderContainer';
 import SearchBar from '../components/common/SearchBar';
 import NavBar from '../components/common/NavBar';
 
+import {Switch, Route} from 'react-router-dom';
+
+import Home from './body/Home';
+
 
 import styles from './App.css';
 import classNames from 'classnames/bind';
@@ -17,6 +21,9 @@ function App() {
         <HeaderContainer />
         <SearchBar />
         <NavBar />
+        <Switch>
+          <Route exact path="/" component={Home}/> 
+        </Switch>
     </div>
   );
 }

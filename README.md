@@ -62,12 +62,6 @@ export default Root;
 ```
   - VSCode jsconfig.json 관련 (https://code.visualstudio.com/docs/languages/jsconfig)
 
-* css module (css파일명을 [파일이름].module.css 로 만들면 최종 적용 classname은 [파일이름]_[클래스이름]__[해쉬값] 형태로 자동으로 생성해서 중복을 피해주는 기술)
-  - jsx코딩시 className={styles.wrapper} 형태로 사용.
-  - global로 사용하고 싶을때는 css에는 :global .wrapper {...} 로 작성하고 jsx에는 className="wrapper"로 사용한다.
-  - 두개 이상 class를 적용할 때는 className={ `${styles.wrapper} ${styles.wrapper}` } 와 같이 사용한다.
-  - 이같은 사용성 편의를 위해 classnames 라이브러리를 사용하면 좀 더 쉬워진다. 참조 url(https://github.com/JedWatson/classnames#readme)
-
 * public/**manifest.json** 관련
   - 앱에 대한 정보를 담고있는 json파일 입니다.
   - 항목별 설명
@@ -83,6 +77,12 @@ export default Root;
   - 브라우저의 백그라운드에서 실행되는 자바스크립트 워커 이다. 웹에서도 네이티브처럼 오프라인 상테에서도 사용가능하고, 푸시알림 기능도 사용할 수 있는데, 이런기능을 할 수 있도록 도와주는 것.
 
 
+## React 에서 사용하는 기능들 정리
+* css module (css파일명을 [파일이름].module.css 로 만들면 최종 적용 classname은 [파일이름]_[클래스이름]__[해쉬값] 형태로 자동으로 생성해서 중복을 피해주는 기술)
+  - jsx코딩시 className={styles.wrapper} 형태로 사용.
+  - global로 사용하고 싶을때는 css에는 :global .wrapper {...} 로 작성하고 jsx에는 className="wrapper"로 사용한다.
+  - 두개 이상 class를 적용할 때는 className={ `${styles.wrapper} ${styles.wrapper}` } 와 같이 사용한다.
+  - 이같은 사용성 편의를 위해 classnames 라이브러리를 사용하면 좀 더 쉬워진다. 참조 url(https://github.com/JedWatson/classnames#readme)
 
 
 

@@ -4,8 +4,6 @@ import App from './containers/App';
 import { Provider } from 'react-redux';
 //import configure from './store/configure';
 
-import './index.css';
-
 //const store = configure();
 
 const Root = () => {

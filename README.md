@@ -48,6 +48,7 @@ export default Root;
 * Root.js 컴포넌트에서 필요한 library들을 설치해준다.
   - react-router-dom, redux, react-redux 등
 * containers폴더 아래 App.js 컴포넌트를 생성.
+* 상황에 따라 webpack.config.js 와 같이 설정을 해줘야 하는 경우에는 npm run eject 를 해서 프로젝트 환경설정 파일들이 루트 경로로 이동되게 한다음 설정한다.
 
 
 * public/**manifest.json** 관련
@@ -88,3 +89,4 @@ export default Root;
 * classNames (npm i classnames) (https://velog.io/@velopert/react-component-styling) (https://github.com/JedWatson/classnames#readme)
 * 리액트 스타일링 방법 (https://velog.io/@velopert/react-component-styling)
 * 리액트 파일로더, url로더 관련 (http://jeonghwan-kim.github.io/js/2017/05/22/webpack-file-loader.html)
+* css-loader (https://github.com/webpack-contrib/css-loader)

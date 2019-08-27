@@ -62,6 +62,11 @@ export default Root;
 ```
   - VSCode jsconfig.json 관련 (https://code.visualstudio.com/docs/languages/jsconfig)
 
+* css module (css파일명을 [파일이름].module.css 로 만들면 최종 적용 classname은 [파일이름]_[클래스이름]__[해쉬값] 형태로 자동으로 생성해서 중복을 피해주는 기술)
+  - jsx코딩시 className={styles.wrapper} 형태로 사용.
+  - global로 사용하고 싶을때는 css에는 :global .wrapper {...} 로 작성하고 jsx에는 className="wrapper"로 사용한다.
+  - 두개 이상 class를 적용할 때는 className={ `${styles.wrapper} ${styles.wrapper}` } 와 같이 사용한다.
+  - 이같은 사용성 편의를 위해 classnames 라이브러리를 사용하면 좀 더 쉬워진다. 참조 url(https://github.com/JedWatson/classnames#readme)
 
 * public/**manifest.json** 관련
   - 앱에 대한 정보를 담고있는 json파일 입니다.

@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import logo from 'resources/images/logo.png';
+import profile from 'resources/images/img_profile.png';
+import info from 'resources/images/img_info.png';
+
 const propTypes = {
     
 };
@@ -29,10 +33,10 @@ class HeaderContainer extends Component {
         return (
             <header>
                 <div className="hear_wrap">
-                    <h1><img src="resources/images/logo.png" alt="BI" /> <a href="my_vm.html">SPM Report</a></h1>
+                    <h1><img src={logo} alt="BI" /> <a href="my_vm.html">SPM Report</a></h1>
                     <nav className="gnb_right">
-                        <a><img src="/images/img_profile.png" alt="로그인" />&nbsp;&nbsp;&nbsp;김찬호님</a>
-                        <a><img src="/images/img_info.png" alt="로그아웃" />&nbsp;&nbsp;&nbsp;사용안내</a>
+                        <a><img src={profile} alt="로그인" />&nbsp;&nbsp;&nbsp;김찬호님</a>
+                        <a><img src={require('resources/images/img_info.png')} alt="로그아웃" />&nbsp;&nbsp;&nbsp;사용안내</a>
                         <div className="selectbox" style={select}>
                             <div className="select">
                                 <p className="tit" title="조회월"><a href="#none"><span>데이타서비스</span></a></p>

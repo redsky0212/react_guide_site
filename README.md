@@ -48,7 +48,7 @@ export default Root;
 * Root.js 컴포넌트에서 필요한 library들을 설치해준다.
   - react-router-dom, redux, react-redux 등
 * containers폴더 아래 App.js 컴포넌트를 생성.
-* 상황에 따라 webpack.config.js 와 같이 설정을 해줘야 하는 경우에는 npm run eject 를 해서 프로젝트 환경설정 파일들이 루트 경로로 이동되게 한다음 설정한다.
+* 상황에 따라 webpack.config.js 와 같이 설정을 해줘야 하는 경우에는 **npm run eject** 를 해서 프로젝트 환경설정 파일들이 루트 경로로 이동되게 한다음 설정한다.
 * 프로젝트 루트 지정하기
   - import할때 경로지정이 복잡할 경우 webpack, babel plugin등을 사용합니다. 이경우 editor에서 import자동완성 기능을 사용할 수 없음.
   - 그래서 VS code에서는 jsconfig.json를 통하여 자동완성을 사용할 수 있다.

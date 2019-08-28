@@ -53,7 +53,7 @@ export default Root;
 * 프로젝트 루트 지정하기
   - import할때 경로지정이 복잡할 경우 webpack, babel plugin등을 사용합니다. 그럴경우 editor에서 import자동완성 기능을 사용할 수 없음.
   - 그래서 VS code에서는 jsconfig.json를 통하여 자동완성을 사용할 수 있다.
-  - 기본적으로 css-loader등이 설치 되어있으므로 루트 경로를 설정하기 위한 jsconfig.json파일을 루트에 생성한 다음 아래코드를 넣는다.
+  - 기본적으로 css-loader등이 설치 되어있으므로 루트 경로를 설정하기 위한 jsconfig.json파일을 루트에(src밑이 아님) 생성한 다음 아래코드를 넣는다.
 ```
 {
   "compilerOptions": {

@@ -49,8 +49,9 @@ export default Root;
   - react-router-dom, redux, react-redux 등
 * containers폴더 아래 App.js 컴포넌트를 생성.
 * 상황에 따라 webpack.config.js 와 같이 설정을 해줘야 하는 경우에는 **npm run eject** 를 해서 프로젝트 환경설정 파일들이 루트 경로로 이동되게 한다음 설정한다.
+  - (아직 커밋이 되어있지 않은 파일들이 있을경우에는 eject가 되지 않는다.)
 * 프로젝트 루트 지정하기
-  - import할때 경로지정이 복잡할 경우 webpack, babel plugin등을 사용합니다. 이경우 editor에서 import자동완성 기능을 사용할 수 없음.
+  - import할때 경로지정이 복잡할 경우 webpack, babel plugin등을 사용합니다. 그럴경우 editor에서 import자동완성 기능을 사용할 수 없음.
   - 그래서 VS code에서는 jsconfig.json를 통하여 자동완성을 사용할 수 있다.
   - 기본적으로 css-loader등이 설치 되어있으므로 루트 경로를 설정하기 위한 jsconfig.json파일을 루트에 생성한 다음 아래코드를 넣는다.
 ```

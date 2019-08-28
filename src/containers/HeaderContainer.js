@@ -33,7 +33,7 @@ class HeaderContainer extends Component {
         return (
             <header>
                 <div className="hear_wrap">
-                    <h1><img src={logo} alt="BI" /> <a href="my_vm.html">SPM Report</a></h1>
+                    <h1><img src={logo} alt="BI" /> <a href="my_vm.html">React Guide</a></h1>
                     <nav className="gnb_right">
                         <a><img src={profile} alt="로그인" />&nbsp;&nbsp;&nbsp;김찬호님</a>
                         <a><img src={require('resources/images/img_info.png')} alt="로그아웃" />&nbsp;&nbsp;&nbsp;사용안내</a>

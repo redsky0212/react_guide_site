@@ -85,7 +85,8 @@ export default Root;
   - 두개 이상 class를 적용할 때는 className={ `${styles.wrapper} ${styles.wrapper}` } 와 같이 사용한다.
   - 이같은 사용성 편의를 위해 classnames 라이브러리를 사용하면 좀 더 쉬워진다. 참조 url(https://github.com/JedWatson/classnames#readme)
 
-
+* .env 파일을 이용한 환경변수 설정하기(http://lemonja.blogspot.com/2018/08/reactjs-cra.html)
+  
 
 
 ## 참조 URL

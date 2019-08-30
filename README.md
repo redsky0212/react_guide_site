@@ -98,7 +98,31 @@ export default Root;
   - **store**: React.js 프로젝트에서 사용하는 모든 동적 데이터들을 담아두는 곳 입니다.
   - **action**: 어떤 변화가 일어나야 할 지 나타내는 객체입니다.
   - **reducer**: action 객체를 받았을 때, 데이터를 어떻게 바꿀지 처리할지 정의하는 객체입니다.
+  - 처리과정
+    (이벤트발생 -> 걸려있는redux객체의dispatch처리(인자:액션생성자) -> 액션생성자는type에따른 리듀서로직처리 )
 
+* ducks구조의 액션을 사용하는 Container컴포넌트쪽에서 코딩해야하는 소스
+```
+// store안의 state 값을 props로 연결한다.
+const mapStateToProps = (state) => ({
+    counters: state.get('counters')
+});
+
+/*
+    액션 생성자를 사용하여 액션을 생성하고,
+    해당 액션을 dispatch 하는 함수를 만들은 후, 이를 props 로 연결해줍니다.
+*/
+const mapDispatchToProps = (dispatch) => ({
+    onIncrement: (index) => dispatch(actions.increment(index)),
+    onDecrement: (index) => dispatch(actions.decrement(index)),
+    onSetColor: (index) => {
+        const color = getRandomColor();
+        dispatch(actions.setColor({index, color}));
+    }
+});
+
+const CounterListContainer = connect(mapStateToProps, mapDispatchToProps)(CounterList);
+```
 
 ## 참조 URL
 * Redux관련 설명 (https://lunit.gitbook.io/redux-in-korean/)

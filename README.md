@@ -10,6 +10,8 @@
 * public폴더에 favicon.ico, index.html, manifest.json제외한 모든파일 삭제.
 * public폴더의 index.html파일의 내부 소스 정리... (필요없는 주석 삭제 )
 * components, containers폴더 생성
+  - Presentational컴포넌트 : redux나 상태관리 미들웨어의 의존성이 없고 주어진 props로 화면을 그리거나 style 처리만 하는 컴포넌트
+  - Container컴포넌트 : 상태를 관리,변경하고 액션을 처리하여 등을 하는 컴포넌트
 * index.js파일 수정
   - 필요없는 로딩 소스는 삭제하고 최초 로딩 컴포넌트를 Root로 설정해주고 Root 컴포넌트를 생성해 준다.
 ```
@@ -47,7 +49,7 @@ export default Root;
 ```
 * Root.js 컴포넌트에서 필요한 library들을 설치해준다.
   - react-router-dom, redux, react-redux 등
-* containers폴더 아래 App.js 컴포넌트를 생성.
+* components폴더 아래 App.js 컴포넌트를 생성.
 * 상황에 따라 webpack.config.js 와 같이 설정을 해줘야 하는 경우에는 **npm run eject** 를 해서 프로젝트 환경설정 파일들이 루트 경로로 이동되게 한다음 설정한다.
   - (아직 커밋이 되어있지 않은 파일들이 있을경우에는 eject가 되지 않는다.)
 * 프로젝트 루트 지정하기

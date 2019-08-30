@@ -94,6 +94,11 @@ export default Root;
   - package.json에 프록시 추가 ("proxy": "http://localhost:4000" <-- 서버주소>)
   - 그런다음 api호출시 '/api/...// ' 이런식으로 baseURL을 빼고 호출하여 사용하면 된다.
 
+* Redux 설명 (npm install --save redux react-redux)
+  - **store**: React.js 프로젝트에서 사용하는 모든 동적 데이터들을 담아두는 곳 입니다.
+  - **action**: 어떤 변화가 일어나야 할 지 나타내는 객체입니다.
+  - **reducer**: action 객체를 받았을 때, 데이터를 어떻게 바꿀지 처리할지 정의하는 객체입니다.
+
 
 ## 참조 URL
 * Redux관련 설명 (https://lunit.gitbook.io/redux-in-korean/)

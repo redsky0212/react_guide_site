@@ -115,3 +115,4 @@ export default Root;
 * 리액트 파일로더, url로더 관련 (http://jeonghwan-kim.github.io/js/2017/05/22/webpack-file-loader.html)
 * css-loader (https://github.com/webpack-contrib/css-loader)
 * VSCode jsconfig.json 관련 (https://code.visualstudio.com/docs/languages/jsconfig)
+* 리덕스 관련 (https://deminoth.github.io/redux/basics/UsageWithReact.html)

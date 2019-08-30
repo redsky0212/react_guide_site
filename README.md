@@ -86,7 +86,10 @@ export default Root;
   - 이같은 사용성 편의를 위해 classnames 라이브러리를 사용하면 좀 더 쉬워진다. 참조 url(https://github.com/JedWatson/classnames#readme)
 
 * .env 파일을 이용한 환경변수 설정하기(http://lemonja.blogspot.com/2018/08/reactjs-cra.html)
-  
+* CORS해결하기
+  - node서버와 react front가 서로 다른 서버일 경우 (Access-Control-Allow-Origin)에러발생시
+  - package.json에 프록시 추가 ("proxy": "http://localhost:4000" <-- 서버주소>)
+  - 그런다음 api호출시 '/api/...// ' 이런식으로 baseURL을 빼고 호출하여 사용하면 된다.
 
 
 ## 참조 URL

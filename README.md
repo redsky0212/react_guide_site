@@ -131,6 +131,11 @@ const CounterListContainer = connect(mapStateToProps, mapDispatchToProps)(Counte
 * this.setState 사용시 
   - this.setState({key: value}}); 일반적인 state변화 방법
   - this.setState((prevState) => { return {key: prevState.key + 1}; }); 이전 상태값을 사용하여 state를 변화 시킬때는 함수를 이용해서 사용하는게 좋음.
+* 리엑트 돔 element접근방법 ref 문구.
+  ```
+  <input type="button" ref={(e)=>{this.input=e}} />
+  ```
+
 
 
 ## 참조 URL

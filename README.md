@@ -135,8 +135,15 @@ const CounterListContainer = connect(mapStateToProps, mapDispatchToProps)(Counte
   ```
   <input type="button" ref={(e)=>{this.input=e}} />
   ```
-* component 만들때 class방식과 함수형 두가지 방법을 알 필요 있음.
-  - 함수형 컴포넌트 개발시 state, ref사용방법
+* component 만들때 class방식과 함수형 두가지 방법을 알 필요 있음 (함수형 권장).
+  - 함수형(Hooks) 컴포넌트는 state변화시 컴포넌트 함수 전체가 다시 실행된다. 그러므로 class형 컴포넌트보다 조금 더 느릴 수 있다.
+  - jsx 속성 코딩시 체크 (class --> className, for --> htmlFor)
+  - class컴포넌트에서 setState를 할때마나 render가 호출 되므로 내부에 함수를 넣어서 적용할 필요가 있음.
+  - 함수형컴포넌트에서는 각각의 setState(setFirst, setValue 등)를 처리 할때는 몰아서 한번만 render가 호출됨.
+  - 함수형 컴포넌트 개발시 state, ref사용방법 
+
+  - (최종 나의 생각) 함수형 컴포넌트를 쓰면서 state, ref를 사용하는 방법으로 개발, render 호출시 여러번 되는지 유의, 함수형 컴포넌트를 쓰면서 class할때보다 느려질 요소가 있는지?.
+
   ```
   // 예시 코딩
   const GuGuDan = () => {

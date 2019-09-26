@@ -135,6 +135,38 @@ const CounterListContainer = connect(mapStateToProps, mapDispatchToProps)(Counte
   ```
   <input type="button" ref={(e)=>{this.input=e}} />
   ```
+* component 만들때 class방식과 함수형 두가지 방법을 알 필요 있음.
+  - 함수형 컴포넌트 개발시 state, ref사용방법
+  ```
+  // 예시 코딩
+  const GuGuDan = () => {
+      // state초기 할당 방법
+      const [first, setFirst] = React.useState(초기값);
+      const [second, setSecond] = React.useState(초기값);
+      const [value, setValue] = React.useState('');
+      // ref 초기 할당 방법
+      const inputRef = React.useRef(초기값);
+
+      // 사용할 함수 설정
+      const onChangeInput = (e) => {
+          setValue(e.target.value);
+      }
+      const onSubmitForm = (e) => {
+          e.preventDefault();
+          // ref사용방법
+          inputRef.current.focus();
+      }
+
+      return (
+          <React.Fragment>
+            <div>{first} 곱하기 {second}는?</div>
+            <form onSubmit={onSubmitForm}>
+                <input ref={inputRef} onChange={onChangeInput} />
+            </form>
+          </React.Fragment>
+      );
+  }
+  ```
 
 
 

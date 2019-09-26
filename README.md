@@ -177,7 +177,18 @@ const CounterListContainer = connect(mapStateToProps, mapDispatchToProps)(Counte
       );
   }
   ```
+* babel 사용용도 (react에서 jsx를 사용하기 위하여 설치)(babel의 설정이 추가적으로 필요함. ---> webpack.config.js 에서 module에 rules를 설정)) 
+  - @babel/core ---> babel의 기본적인 것들이 들어있음.
+  - @babel/preset-env ---> 각 브라우져에 맞게 최신분법을 예전 문법으로 바꿔줌.
+  - @babel/preset-react ---> 리엑트에서 jsx를 사용할 수 있음.
+  - babel-loader ---> babel과 webpack을 연결해 줌.
+  - @babel/plugin-proposal-class-properties ---> class컴포넌트 안에서 state = {} 이와같이 사용하려면 설치가 필요. (에러발생)
 
+* webpack 공식문서(https://webpack.js.org/concepts/)
+  - 가장 기본이 되는 속성은 (entry, mode, module, plugins, output)
+
+* webpack 설정시 babel preset env설정시 browser설정 관련 참조 사이트 (https://github.com/browserslist/browserslist) --> Full list
+  - 브라우저 지원을 어느 선 까지 해야하나.. 설정할때 유용. 
 
 
 ## 참조 URL

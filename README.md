@@ -138,6 +138,14 @@ const CounterListContainer = connect(mapStateToProps, mapDispatchToProps)(Counte
 * .js, .jsx의 차이
   - 사실 큰 차이는 없으나 소스의 내용중에 jsx문법이 들어있으면 .jsx확장자로 입력해주는게 좋다.(추후 유지보수나 가독성 면에서 금방 jsx문법이 있는 파일이다는 것을 바로 알 수 있어서.)
 
+* react에서 form다룰때 자주 발생하는 에러 
+  - input 에 value속성과 onChange이벤트를 셋트로 사용해야한다.
+
+* react 개발시 자동 빌드 관련
+  - react-hot-loader webpack-dev-server  두가지를 설치
+  - hot사용법 익혀야함.
+  - webpack-dev-server를 띄워서 할 경우 초기 app.js파일 로드 하는 가상경로 셋팅이 필요.
+
 * component 만들때 class방식과 함수형 두가지 방법을 알 필요 있음 (함수형 권장).
   - 함수형(Hooks) 컴포넌트는 state변화시 컴포넌트 함수 전체가 다시 실행된다. 그러므로 class형 컴포넌트보다 조금 더 느릴 수 있다.
   - jsx 속성 코딩시 체크 (class --> className, for --> htmlFor)

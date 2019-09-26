@@ -124,6 +124,15 @@ const mapDispatchToProps = (dispatch) => ({
 const CounterListContainer = connect(mapStateToProps, mapDispatchToProps)(CounterList);
 ```
 
+
+## React 개발시 알아두면 좋은 것들
+* render안에있는 로직은 메서드 함수로 밖으로 빼놓는게 좋음.
+  - state의 변화(this.setState)에 의해서 render는 수시로 호출이 되므로 render안쪽에 함수를 직접 넣으면 매번 함수가 새로 생성이 되며 렌더링 되므로 낭비가 심해진다.
+* this.setState 사용시 
+  - this.setState({key: value}}); 일반적인 state변화 방법
+  - this.setState((prevState) => { return {key: prevState.key + 1}; }); 이전 상태값을 사용하여 state를 변화 시킬때는 함수를 이용해서 사용하는게 좋음.
+
+
 ## 참조 URL
 * Redux관련 설명 (https://lunit.gitbook.io/redux-in-korean/)
 * velopert님의 리덕스 사용 (https://velog.io/@velopert/Redux-3-%EB%A6%AC%EB%8D%95%EC%8A%A4%EB%A5%BC-%EB%A6%AC%EC%95%A1%ED%8A%B8%EC%99%80-%ED%95%A8%EA%BB%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-nvjltahf5e)

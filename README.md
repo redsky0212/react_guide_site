@@ -204,6 +204,7 @@ const CounterListContainer = connect(mapStateToProps, mapDispatchToProps)(Counte
   - 하지만 babel을 이용하여 import를 require와 같은 느낌으로 사용할 수 있다.
   - import와 require는 엄격히 따지면 다르지만 일정부분은 호환이 된다.
 
+* react개발 완료 최종 완료시 소스 및 redux를 디버깅 시 가려지게 적용해야함.
 
 
 ## 참조 URL

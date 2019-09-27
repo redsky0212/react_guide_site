@@ -128,9 +128,10 @@ const CounterListContainer = connect(mapStateToProps, mapDispatchToProps)(Counte
 ## React 개발시 알아두면 좋은 것들
 * render안에있는 로직은 메서드 함수로 밖으로 빼놓는게 좋음.
   - state의 변화(this.setState)에 의해서 render는 수시로 호출이 되므로 render안쪽에 함수를 직접 넣으면 매번 함수가 새로 생성이 되며 렌더링 되므로 낭비가 심해진다.
-* this.setState 사용시 
+* this.setState 사용시 유의점 
   - this.setState({key: value}}); 일반적인 state변화 방법
   - this.setState((prevState) => { return {key: prevState.key + 1}; }); 이전 상태값을 사용하여 state를 변화 시킬때는 함수를 이용해서 사용하는게 좋음.
+  - setState는 비동기 이기때문에 여러번 상태변화가 있을경우에는 문제가 생기지 않는다.
 * 리엑트 돔 element접근방법 ref 문구.
   ```
   <input type="button" ref={(e)=>{this.input=e}} />
@@ -197,6 +198,12 @@ const CounterListContainer = connect(mapStateToProps, mapDispatchToProps)(Counte
 
 * webpack 설정시 babel preset env설정시 browser설정 관련 참조 사이트 (https://github.com/browserslist/browserslist) --> Full list
   - 브라우저 지원을 어느 선 까지 해야하나.. 설정할때 유용. 
+
+* node 시스템에서의 import와 require 차이
+  - node시스템 에서는 사실 require만 지원을 한다.
+  - 하지만 babel을 이용하여 import를 require와 같은 느낌으로 사용할 수 있다.
+  - import와 require는 엄격히 따지면 다르지만 일정부분은 호환이 된다.
+
 
 
 ## 참조 URL

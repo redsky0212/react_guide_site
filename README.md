@@ -243,6 +243,11 @@ const CounterListContainer = connect(mapStateToProps, mapDispatchToProps)(Counte
   ```
   - useLayoutEffect는 화면의 변화가 일어나기 전에 발생됨. useEffect는 화면이 변경되고나서 호출.
 
+* hooks컴퍼넌트에서 오래걸리는 함수 재호출 문제 를 해결하기 위한 (useMemo, useCallback 사용법)
+  - useMemo(() => { return getWinNumbers(); }, [])   ---> 복잡한 함수 결과값을 기억함.
+  - useRef: 일반 값을 기억함.
+  - useCallback: 기억하고자 하는 함수 자체를 기억함. 함수생성 자체가 오래 걸릴때 사용하면 좋음.
+
 ## 참조 URL
 * Redux관련 설명 (https://lunit.gitbook.io/redux-in-korean/)
 * velopert님의 리덕스 사용 (https://velog.io/@velopert/Redux-3-%EB%A6%AC%EB%8D%95%EC%8A%A4%EB%A5%BC-%EB%A6%AC%EC%95%A1%ED%8A%B8%EC%99%80-%ED%95%A8%EA%BB%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-nvjltahf5e)

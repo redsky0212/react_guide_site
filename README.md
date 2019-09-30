@@ -206,6 +206,11 @@ const CounterListContainer = connect(mapStateToProps, mapDispatchToProps)(Counte
 
 * react개발 완료 최종 완료시 소스 및 redux를 디버깅 시 가려지게 적용해야함.
 
+* react 컴포넌트 사용시 , shouldComponentUpdate 사용, PureComponent로 생성하여 사용하면 state의 변경을 조정하여 render의 성능을 개선할 수 있다.
+  - hooks, 함수형 컴포넌트에서는 memo로 감싸서 적용하면 PureComponent와 같은 것을 적용할 수 있다.
+
+* class 컴포넌트에서 createRef사용방법
+  - this.inputRef = createRef(); 이렇게 지정한 다음. &lt;input ref={this.inputRef} /&gt;
 
 ## 참조 URL
 * Redux관련 설명 (https://lunit.gitbook.io/redux-in-korean/)

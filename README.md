@@ -212,6 +212,37 @@ const CounterListContainer = connect(mapStateToProps, mapDispatchToProps)(Counte
 * class 컴포넌트에서 createRef사용방법
   - this.inputRef = createRef(); 이렇게 지정한 다음. &lt;input ref={this.inputRef} /&gt;
 
+* 자식은 부모로부터 물려받은 props를 바꿀 수 없기 때문에 state에 만들어서 그 state값을 바꿔서 적용하는 방법으로 한다.
+
+* 부모 -> 자식 -> 자식 -> 자식 이와같이 깊은 부모자식관계에서 부모가 최종 자식에게 바로 값을 넘길 수 있는 방법이 redux, context이다. 
+
+* react의 jsx에서는 조건문을 삼항연산자로 적용한다. 아니면 함수로 빼서 사용한다.
+
+* 함수형(hooks)컴포넌트에서는 class컴포넌트에서 사용하던 this.timeout 같은 전역적인 것들을 ref로 사용하여 적용한다.
+  - const timeout = useRef(null);  timeout.current = 어쩌고....  이런식으로 사용..
+  - 값이 바뀌어도 render를 하고 싶지 않은 것들은 useRef를 사용하여 적용한다.
+
+* setInterval과 같은 비동기 호출 함수들은 추 후 콤포넌트가 제거 되거나 나갔을때는 반드시 제거(clear)를 해줘야 한다.
+  - componentWillUnmount부분에서 주로 처리 함.
+
+* 함수형 컴포넌트와 hooks컴포넌트의 차이는 state를 이용하는냐의 차이.
+
+* 함수형(hooks)컴포넌트에서 LifeCycle사용법
+  - useEffect를 사용한다.
+  ```
+  useEffect(() => {
+      // componentDidMount, componentDidUpdate 역할 (1:1대응은 아님)
+       // 코딩... 
+
+      return () => {// componentWillUnmount 역할 (1:1대응은 아님)
+        // 코딩...
+      }
+  }, [  // 두번째인자인 배열에 매번 바뀌어야 하는 state를 넣어서 확인한다.(헷갈리는 부분...)
+
+  ]);
+  ```
+  - useLayoutEffect는 화면의 변화가 일어나기 전에 발생됨. useEffect는 화면이 변경되고나서 호출.
+
 ## 참조 URL
 * Redux관련 설명 (https://lunit.gitbook.io/redux-in-korean/)
 * velopert님의 리덕스 사용 (https://velog.io/@velopert/Redux-3-%EB%A6%AC%EB%8D%95%EC%8A%A4%EB%A5%BC-%EB%A6%AC%EC%95%A1%ED%8A%B8%EC%99%80-%ED%95%A8%EA%BB%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-nvjltahf5e)

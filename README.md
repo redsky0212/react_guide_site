@@ -246,7 +246,11 @@ const CounterListContainer = connect(mapStateToProps, mapDispatchToProps)(Counte
 * hooks컴퍼넌트에서 오래걸리는 함수 재호출 문제 를 해결하기 위한 (useMemo, useCallback 사용법)
   - useMemo(() => { return getWinNumbers(); }, [])   ---> 복잡한 함수 결과값을 기억함.
   - useRef: 일반 값을 기억함.
-  - useCallback: 기억하고자 하는 함수 자체를 기억함. 함수생성 자체가 오래 걸릴때 사용하면 좋음.
+  - useCallback: 기억하고자 하는 함수 자체를 기억함. 함수생성 자체가 오래 걸릴때 사용하면 좋음. 자식 콤포넌트에 함수를 넘길때는 useCallback을 꼭 해줌.
+
+* hooks 시리지들을 조건문, 반복문에 넣지말고 순서도 바뀌면 안됨.
+
+* hooks의 useReducer, useContext는 Redux를 완전히 대체하지는 못함...
 
 ## 참조 URL
 * Redux관련 설명 (https://lunit.gitbook.io/redux-in-korean/)
